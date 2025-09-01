@@ -19,7 +19,7 @@ const UsersList = () => {
     if (usersList.length === 0) {
       dispatch(fetchUsers());
     }
-  }, [dispatch]);
+  }, [dispatch, usersList.length]);
 
   function validateInput(user: User): boolean {
     if (!user.username.trim()) return false;

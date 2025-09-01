@@ -258,7 +258,11 @@ const Posts = () => {
                           <Button
                             type="primary"
                             onClick={() => handleSavePost(postBeingEdited)}
-                            disabled={!postBeingEdited}
+                            disabled={
+                              !postBeingEdited ||
+                              !postBeingEdited.title.trim() ||
+                              !postBeingEdited.body.trim()
+                            }
                           >
                             Save
                           </Button>
