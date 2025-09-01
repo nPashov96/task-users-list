@@ -1,0 +1,13 @@
+.users-container {
+  width: 304.22px;
+  background: #f0f8ff;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.user-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+}
